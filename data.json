@@ -1,0 +1,26 @@
+{
+        "card1":[{
+            "id": "card1",
+            "src": "./src/assets/Weather-App.jpg",
+            "subtitle": "Weather App",
+            "description": "App shows the weather information, the data is extracted from two APIs, and it is made with JavaScript HTML and Css, when you start the page you must allow the browser to locate your location.",
+            "link": "https://weatherys-app-devchallenges.netlify.app"
+        }],
+
+        "card2":[{
+            "id": "card2",
+            "src": "./src/assets/space.jpg",
+            "subtitle": "Space Tourism",
+            "description": "Space Tourism is a challenge provided by the frontendmentor website and I have done it with the Vue framework and Sass.",
+            "link": "https://space-tourism-by-yelitzasuniaga.netlify.app/#/"
+        }],
+
+        "card3":[{
+            "id": "card3",
+            "src": "./src/assets/todo.jpg",
+            "subtitle": "TODO",
+            "description": "TODO is a challenge provided by the frontendmentor website and I have done it with the Vue framework and Sass",
+            "link": "https://app-todo-frontm.netlify.app/"
+        }]
+
+}

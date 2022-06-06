@@ -1,0 +1,82 @@
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 10rem;
+    z-index: 1000;
+    nav{
+        margin-top: 6rem;
+        margin-left: 2rem;
+        // background: rgba(255, 255, 255,.05);
+        // backdrop-filter: blur(1.5rem);
+        width: 30%;
+        // height: 50%;
+        font-family: var(--ff-serif);
+        font-weight: 700;
+        font-size: .7rem;
+        @include d-flex(center, start, 'false', 'false');
+        transform: translateX(-100%);
+        transition: transform .75s linear;
+        ul{
+            width: 100%;
+            height: 10rem;
+            margin-top: 7rem;
+           
+            @include d-flex(space-between, start, 'true', 'true');
+            gap: .5rem;
+            li{
+                padding: .5rem;
+                list-style: none;
+                border: none;
+               
+                a{
+                    text-decoration: none;
+                    color: white;
+                    // transition: scroll 5s ease-in-out;
+                    // &:hover{
+                    //     cursor: pointer;
+
+                    // }
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+                .update-color-header{
+                    color: var(--cl-yellow) !important;
+                    // animation: opc 1s linear infinite;
+                }
+
+            }
+
+        }
+    }
+    .open {
+        transform: translateX(0);
+        transition: transform .75s linear;
+    }
+    .close-nav{
+        transform: translateX(-100%);
+    }
+    .button-toggle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 11rem;
+        left: 2rem;
+        display: block;
+        z-index: 100;
+        border: none;
+        button{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: url('../assets/icon-hamburgerx.svg') no-repeat center;
+        }
+        .close{
+            background: url('../assets/icon-close.svg') no-repeat center;
+        }
+    }
+}
